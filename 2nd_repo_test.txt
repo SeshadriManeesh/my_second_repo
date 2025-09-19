@@ -1,0 +1,3 @@
+Commit
+Saves a snapshot of your changes into Git (locally).
+Creates a permanent, named “checkpoint”. You can roll back or see differences later. Commits are the backbone of version control.
