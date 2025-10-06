@@ -8,3 +8,75 @@ Creates a permanent, named “checkpoint”. You can roll back or see difference
 editing in local after saving, new text (offline)....
 
 editing in online.........new text (online)...
+
+
+📝 Step 1 — Create a new repository on GitHub
+
+Log in to your GitHub account: https://github.com/
+
+In the top-right corner, click the + icon → New repository.
+
+Give it a name, e.g. my-first-repo.
+
+Choose Public (so it’s easy).
+
+Do NOT initialize with a README for now (makes cloning simpler).
+
+Click Create repository.
+
+GitHub will show you a page with a URL like:
+
+https://github.com/YourUserName/my-first-repo.git
+
+
+or SSH version:
+
+git@github.com:YourUserName/my-first-repo.git
+
+
+Copy the one you want to use.
+(I recommend HTTPS to start — easier for beginners.)
+
+📝 Step 2 — Clone the repository with TortoiseGit
+
+In Windows Explorer, create/open a folder where you want the repo locally (e.g. C:\Projects).
+
+Right-click in the empty area → Git Clone…
+
+In the “URL” field, paste your GitHub repo URL (e.g. https://github.com/YourUserName/my-first-repo.git).
+
+Choose a local directory for it (e.g. C:\Projects\my-first-repo).
+
+Click OK.
+TortoiseGit will clone it; you now have a local copy.
+
+📝 Step 3 — Add a file
+
+Go to your local repo folder (C:\Projects\my-first-repo).
+
+Create a simple text file, e.g. hello.txt with “Hello Git!” inside.
+
+📝 Step 4 — Commit the file
+
+Right-click inside the repo folder → Git Commit → “master” (or “main”).
+
+You’ll see your new file listed under “Unstaged Changes”.
+
+Check the file you want to commit.
+
+Write a commit message in the box, e.g. “Initial commit”.
+
+Click Commit.
+
+This saves the change locally.
+
+📝 Step 5 — Push to GitHub
+
+After committing, right-click in the repo folder again → TortoiseGit → Push.
+
+In the dialog, make sure “Remote” is origin and branch is main or master (same as GitHub).
+
+Click OK.
+
+It will push your changes to GitHub.
+Refresh your GitHub repo page online — you should now see hello.txt.
